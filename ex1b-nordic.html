@@ -479,12 +479,12 @@ Alternatively if you want to just have a single hero
         // Selecciona el texto del primer item del menú de navegación
         // BONUS: NO modifiques el HTML para conseguirlo
 
-        let itemShop = document.querySelector("nav#header");
+        let itemShop = document.querySelector("nav#header a.nosiemprenecesitasunidparaseleccionarunelementodelDOM").textContent;
         console.log('Primer item del menú: ', itemShop); // 'Shop'
 
         // Ejercicio 4
         // Muestra el valor del atributo .src de la ima imagen identificada con el id="producto-1"
-        let srcAtributo = document.querySelector("#producto-1");
+        let srcAtributo = document.querySelector("#producto-1").src;
         console.log('El valor del atributo src de la primera imagen es: ', srcAtributo); // https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80
 
 
@@ -505,7 +505,7 @@ Alternatively if you want to just have a single hero
 
         // Ejercicio 8 (Difícil)
         // Cambia el valor de la propiedad .src de la segunda imagen por este otro https://i.ibb.co/j83Y290/fotogato.jpg
-        document.querySelector("#producto-2").src= "https://i.ibb.co/j83Y290/fotogato.jpg";
+        document.querySelector("#producto-2").src= "https://hips.hearstapps.com/hmg-prod/images/gatito-regalos-para-gatos-1613566520.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*";
 
     </script>
 </body>
